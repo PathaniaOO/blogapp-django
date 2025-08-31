@@ -1,5 +1,28 @@
-.env
-*.pyc
+# Python bytecode
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django stuff
+*.sqlite3
 db.sqlite3
-/media
+/media/
+staticfiles/
+
+# Virtual environments
+env/
+.venv/
+venv/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.iml
