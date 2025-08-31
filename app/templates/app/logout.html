@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Blog | Logout{% endblock title %}
+{% block content %}  
+<main>
+<div class="container">
+    <center>
+        <div class="typo">
+            <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type='submit' class="btn btn-primary">Logout</button>
+            </form>
+        </div>
+</center>
+</div>
+</main>
+{% endblock content %}
+
